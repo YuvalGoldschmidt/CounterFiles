@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="homescreen-style-dist.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <script src="homescreen-main.js"></script>
+  </head>
+  <body>
+    <section id="dicta-topbar">
+      <p id="dicta-name">Yuval</p>
+      <p id="dicta-slogan">Counter Files</p>
+      <div id="dicta-menu">
+        <p id="dicta-language">English</p>
+        <p id="dicta-or">|</p>
+        <div id="dicta-tools">
+          <p id="dicta-tools-text">Yuval Tools</p><img src="img/homescreen-tools-arrow.png" id="dicta-tools-button">
+        </div>
+      </div>
+    </section>
+    <section id="synoptic-topbar"><img src="img/homescreen-synoptic-logo.jpg" id="synoptic-logo">
+      <p id="synoptic-text">Synoptic Text</p>
+      <button type="button" id="synoptic-button" class="btn">How to use</button>
+    </section>
+    <section id="body" class="col-6 offset-3">
+      <div id="body-header"><img src="img/homescreen-logo.png" id="logo-img">
+        <p id="heading-text">Upload or drag files</p>
+        <hr id="top-divider">
+      </div>
+      <div id="files">
+        <div id="upload" class="file"><img src="img/homescreen-plus.png" id="plus-img">
+          <p id="upload-text">Upload File</p>
+        </div>
+      </div>
+      <div id="start-button">
+        <button type="button" id="start" class="btn btn-primary">Start</button>
+      </div>
+    </section>
+    <input type="file" id="addfile-input">
+    <section id="footer">
+      <div id="footer-div">
+        <p id="footer-text">About Yuval</p>
+        <p id="footer-text">Terms Of Service</p><a href="https://www.facebook.com/golyuval/"><img src="img/homescreen-facebook-logo.png" id="footer-facebook"></a>
+      </div>
+    </section>
+  </body>
+</html>

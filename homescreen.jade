@@ -1,0 +1,40 @@
+doctype html
+html
+	head
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+		link(rel="stylesheet", href="homescreen-style-dist.css" type="text/css")
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js")
+		script(src="homescreen-main.js")
+	body
+		section#dicta-topbar
+			p#dicta-name Yuval
+			p#dicta-slogan Counter Files
+			div#dicta-menu
+				p#dicta-language English
+				p#dicta-or |
+				div#dicta-tools
+					p#dicta-tools-text Yuval Tools
+					img(src="img/homescreen-tools-arrow.png")#dicta-tools-button
+		section#synoptic-topbar
+			img(src="img/homescreen-synoptic-logo.jpg")#synoptic-logo
+			p#synoptic-text Synoptic Text
+			button(type="button")#synoptic-button.btn How to use
+		section#body.col-6.offset-3
+			div#body-header
+				img(src="img/homescreen-logo.png")#logo-img
+				p#heading-text Upload or drag files
+				hr#top-divider
+			div#files
+				div#upload.file
+					img(src="img/homescreen-plus.png")#plus-img
+					p#upload-text Upload File
+			div#start-button
+				button(type="button")#start.btn.btn-primary Start
+		input(type="file")#addfile-input
+		section#footer
+			div#footer-div
+				p#footer-text About Yuval
+				p#footer-text Terms Of Service
+				a(href="https://www.facebook.com/golyuval/")
+					img(src="img/homescreen-facebook-logo.png")#footer-facebook
